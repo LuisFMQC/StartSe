@@ -1,0 +1,25 @@
+a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+a:visited {
+    color: purple;
+}
+
+input:focus, textarea:focus {
+    background-color: yellow;
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(160, 24, 149);
+}
+
+#meuslinks li:first-child a {
+    background-color: red;
+    color: white;
+}

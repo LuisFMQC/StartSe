@@ -1,0 +1,37 @@
+label[for] {
+    background-color: yellow;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+input[type=text]{
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+form div {
+    margin: 10px;
+}
+
+a[href*=edu]{
+    background-color: green;
+    color: white;
+}
+
+option[value=S] {
+    color: blue;
+}
+ 
+option[value=R] {
+    color: red;
+}
+
+option[value=E] {
+    color: green;
+}
+
+[placeholder] {
+    color: red;
+}

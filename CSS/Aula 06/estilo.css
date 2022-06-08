@@ -1,0 +1,17 @@
+a, .menuitem {
+    text-decoration: underline;
+    color: green;
+    cursor: pointer;
+}
+
+a {
+    background-color: #DDD;
+}
+
+.link {
+    font-size: 50px;
+}
+
+#menulist li {
+    margin: 10px;
+}
