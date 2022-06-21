@@ -1,0 +1,31 @@
+p {
+    background-color: #CCF;
+}
+
+p::first-letter {
+    font-size: 30px;
+    background-color: #AAD;
+}
+
+div::first-line {
+    color: blue;
+}
+
+li {
+    color: green;
+}
+
+ul ::marker {
+    color: red;
+}
+
+::selection {
+    background-color: yellow;
+    color: red;
+}
+
+div::selection {
+    color: black;
+    background-color: white;
+}
+

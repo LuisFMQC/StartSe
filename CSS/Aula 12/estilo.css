@@ -1,0 +1,16 @@
+h1 {
+    border: 5px dotted blue;
+}
+
+h1 * {
+    border: inherit;
+}
+
+p {
+    background-color: blue;
+    color: white;
+}
+
+span {
+    background-color: red;
+}
