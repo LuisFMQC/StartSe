@@ -69,16 +69,16 @@ p {
 }
 
 #presentation :nth-child(1) {
-    animation-delay: .9s;
+    animation-delay: 1.8s;
 }
 
 #presentation :nth-child(2) {
-    animation-delay: 1.9s;
+    animation-delay: 4s;
 }
 
 #presentation :nth-child(3) {
     animation: text_reveal_name .5s ease forwards;
-    animation-delay: 2.9s;
+    animation-delay: 6.1s;
 }
 #presentation .cta{
     display: inline-block;
@@ -90,7 +90,7 @@ p {
     text-transform: uppercase;
     margin-top: 20px;
     letter-spacing: .1rem;
-    transition: .3s ease;
+    transition: .5s ease;
     transition-property: background-color, color;
 }
 
@@ -106,7 +106,8 @@ p {
     left: 0;
     height: 100%;
     width: 0%;
-    animation: text_reveal_box 1s ease;
+    animation: text_reveal_box 1s ease alternate-reverse;
+    animation-iteration-count: 2;
     animation-delay: .4s;
     background-color: gold;
 }
@@ -116,11 +117,11 @@ p {
 }
 
 #presentation h1:nth-child(2) span {
-    animation-delay: 1.5s;
+    animation-delay: 2.6s;
 }
 
 #presentation h1:nth-child(3) span {
-    animation-delay: 2.5s;
+    animation-delay: 4.7s;
 }
 #presentation::after{
     content: '';
