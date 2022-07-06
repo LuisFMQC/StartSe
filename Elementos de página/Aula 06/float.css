@@ -1,0 +1,43 @@
+img {
+    float: right;
+    margin: 5px 20px;
+    height: 250px;
+}
+
+p {
+    border: 1px solid red;
+}
+
+.clear {
+    clear: both;
+    background-color: brown;
+}
+
+#page {
+    background-color: pink;
+    height: 300px;
+}
+
+#page div{
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid red;
+    height: 100%;
+    padding: 10px;
+    width: 25%;
+}
+
+#cabecalho {
+    min-height: 100px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+
+/* .col3 {
+    width: 30%;
+}
+
+.col4 {
+    width: 40%;
+} */

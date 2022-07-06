@@ -1,0 +1,42 @@
+div.relative {
+    position: relative;
+    left: 30px;
+    width: 300px;
+    height: 50px;
+    border: 3px solid #73AD21;
+    background-color: pink;
+}
+
+div.fixed {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    background-color: pink;
+    border: 3px solid #73ad21;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    left: 25%;
+    width: 50%;
+    height: 100px;
+    border: 3px solid #73ad21;
+}
+
+div.sticky{
+    position: sticky;
+    margin-top: 10px;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+#bloco{
+    position: relative;
+    overflow: scroll;
+    height: 100px;
+    border: 1px solid red;
+
+}
