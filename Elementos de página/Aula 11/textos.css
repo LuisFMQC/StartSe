@@ -1,0 +1,25 @@
+p {
+  text-align: justify;
+  line-height: 1.2em;
+  text-indent: 3em;
+  word-spacing: .8em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+p > span {
+  font-size: 1.7em;
+  color: red;
+  vertical-align: sub;
+  text-decoration-line: underline overline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px;
+}
+
+p.special {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: pink;
+  margin-bottom: 20px;
+}

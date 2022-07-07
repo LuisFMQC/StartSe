@@ -1,0 +1,42 @@
+ol.romano {
+  list-style-type: lower-roman;
+  border: 1px solid red;
+  list-style-position: outside;
+}
+
+.romano li {
+  background-color: pink;
+  margin-bottom: 5px;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+ul.img {
+  list-style-image: url()
+}
+
+ul.link {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid red;
+  width: auto;
+}
+
+.link li {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.link li a {
+  text-decoration: none;
+}
+
+.link li:hover {
+  background-color: cyan;
+}
+
+.link li:hover a {
+  text-decoration: underline;
+}
