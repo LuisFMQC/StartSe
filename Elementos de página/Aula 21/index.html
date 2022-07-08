@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Select</title>
+</head> 
+<body>
+  <form action="#" method="post">
+    <div>
+      <label for="opcoes">Selecione uma opção:</label>
+      <select name="opcoes" id="opcoes">
+        <option value="1">Primeiro item</option>
+        <option value="2" selected>Segundo item</option>
+        <option value="3">Terceiro item</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="animais">Selecione um animal:</label>
+      <select name="animais" id="animais" multiple size="8">
+        <optgroup label="4 patas">
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+          <option value="cavalo" disabled >Cavalo</option>
+        </optgroup>
+        <optgroup label="Pássaros">
+          <option value="bemtivi">Bemtivi</option>
+          <option value="arara">Arara</option>
+          <option value="pelicano">Pelicano</option>
+          <option value="cacatua">Cacatua</option>
+        </optgroup>
+      </select>
+    </div>
+  </form>    
+</body>
+</html>

@@ -1,0 +1,7 @@
+form > div {
+  margin: 10px;
+}
+
+textarea {
+  vertical-align: text-top;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Formulários I e II</title>
+</head> 
+<body>
+  <form action="#" method="post">
+    <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome" placeholder="Nome" maxlenght="10" value="Luis" readonly size="30"></p>
+    <p><label for="sobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="sobrenome" placeholder="Ex: Morais" size="30"></p>
+    <p><label for="produto">Nome do produto:</label> <input type="text" name="produto" id="produto" placeholder="Ex: Computador" size="30"></p>
+    <p><label for="cor">Cor:</label> <input type="color" name="cor" id="cor" value="#e66465"></p>
+    <p><label for="data">Data de início:</label> <input type="date" name="data" id="data" value="2022-07-07" min="2022-01-01 "max="2022-12-31"></p>
+    <p><label for="mail">E-mail:</label> <input type="mail" name="mail" id="mail" placeholder="teste@teste.com.br"></p>
+    <p><label for="idade">Idade:</label> <input type="number" name="idade" id="idade" min="5" max="100" step="5"></p>
+    <p><label for="pass">Senha:</label> <input type="password" name="pass" id="pass" min="8"></p>
+    <p><label for="intervalo">Intervalo:</label> <input type="range" name="intervalo" id="intervalo" min="3" max="10" value="6"></p>  
+    <p><label for="busca">Busca:</label> <input type="search" name="busca" id="busca" placeholder="Busque aqui o que precisa"></p>
+    <p><label for="hora">Hora:</label> <input type="time" name="hora" id="hora"></p>
+    <p><label for="url">URL:</label> <input type="url" name="url" id="url" placeholder="http://google.com" required></p>
+  </form>   
+</body>
+</html>
