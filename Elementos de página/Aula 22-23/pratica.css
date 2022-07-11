@@ -9,11 +9,12 @@ fieldset > div {
 
 form {
   width: 750px;
+  background-image: linear-gradient(60deg, rgb(231, 231, 226) 0%, rgb(160, 160, 158) 100%);
 }
 
 fieldset {
   padding-left: 0;
-  background-color: #eee;
+  /* background-color: #eee; */
   border: 1px solid #AAA;
   border-radius: 10px;
 }
@@ -78,7 +79,6 @@ input[type=reset] {
 }
 
 #buttons {
-
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -98,6 +98,10 @@ input[type=reset]:hover {
   cursor: pointer;
   background-color: rgb(148, 6, 13);
   border: 1px solid transparent;
+}
+
+label:hover {
+  cursor: pointer;
 }
 
 h1 {
