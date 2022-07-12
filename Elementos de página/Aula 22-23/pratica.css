@@ -1,15 +1,20 @@
-form > div, fieldset, fieldset > div{
+form > div, fieldset {
   margin: 10px;
+  padding: 5px 0;
+}
+
+fieldset > div {
   padding: 5px 0;
 }
 
 form {
   width: 750px;
+  background-image: linear-gradient(60deg, rgb(231, 231, 226) 0%, rgb(160, 160, 158) 100%);
 }
 
 fieldset {
   padding-left: 0;
-  background-color: #eee;
+  /* background-color: #eee; */
   border: 1px solid #AAA;
   border-radius: 10px;
 }
@@ -21,10 +26,11 @@ legend {
 }
 
 textarea {
-  border-radius: 10px;
+  border-radius: 5px;
   vertical-align: text-top;
   width: 500px;
   height: 150px;
+  padding: 3px;
 }
 
 label {
@@ -59,10 +65,45 @@ input[type=submit] {
   color: white;
   text-align: center;
   vertical-align: middle;
+  height: 35px;
+}
+
+input[type=reset] {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #e41616;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  height: 35px;
+}
+
+#buttons {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 750px;
+  margin: 10px;
+  padding: 0 200px;
+  justify-content: space-between;
 }
 
 input[type=submit]:hover {
   cursor: pointer;
   background-color: green;
   border: 1px solid transparent;
+}
+
+input[type=reset]:hover {
+  cursor: pointer;
+  background-color: rgb(148, 6, 13);
+  border: 1px solid transparent;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+h1 {
+  text-shadow: 0px 0px 5px gray;
 }
