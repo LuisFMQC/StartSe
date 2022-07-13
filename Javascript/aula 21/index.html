@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <style>
+        body {
+            background-color: rgb(2, 2, 32);
+            color: white;
+            font: 14pt Tahoma;
+        }
+
+        #botaoAdicionar {
+            background-color: rgb(24, 131, 10);
+            color: white;
+        }
+        
+        button#remover {
+            position: absolute;
+            right: 100px;
+            background-color: rgb(138, 36, 36);
+            color: white;
+        }
+
+        button#realizada{
+            position: absolute;
+            right: 70px;
+            background-color: rgb(30, 94, 30);
+            color: white;
+        }
+
+        ul li.naorealizada {
+            list-style-type: '☐';
+            cursor: pointer;
+            text-indent: 10px;
+        }
+
+        ul li.realizada {
+            list-style-type: '✓';
+            cursor: pointer;
+            text-indent: 10px;
+            text-decoration: line-through;
+            color: darkgray;
+        }
+        /* #remover {
+            margin-left: 100px;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Lista de Tarefas</h2>
+
+    <div>
+        <input type="text" id="caixaDeTexto" placeholder="Tarefa">
+        <button id="botaoAdicionar" class="adicionar">✙</button>
+
+        <select id="listaSuspensa" hidden>
+            <option>--Seleciona uma opção--</option>
+            <option>Marcar Todas as Tarefas</option>
+            <option>Desmarcar Todas as Tarefas</option>
+            <option>Limpar a Lista de Tarefas</option>
+        </select>
+    </div>
+
+    
+
+    <ul id="listaTarefas">
+
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>
