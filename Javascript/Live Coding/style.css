@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,16 @@
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
+
+.gameover {
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    width: 40vw;
+    height: auto;
+    margin: 20vh 30vw;
+  }
 
 .pipe-game {
     position: absolute;
@@ -37,6 +49,42 @@
 .jump-mario {
     animation: jump-animation 500ms ease-out;
 }
+
+#gameover-image {
+    display:block;
+    width: 40vw;
+    height: 50vh;
+} 
+
+.buttons {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    width: auto;
+    height: auto;
+}
+
+p { 
+    text-shadow: -3px 0 cyan;
+    margin-top: -15vh;
+    font-weight: bold;
+    font-size: 2.5vw; 
+    font-family: Bangers;
+}
+
+/* p:hover {
+    transform: translateY(-2px);
+} */
+
+p:hover {
+    cursor: pointer;
+    transform: translateY(-2px)
+}
+
+span {
+    margin: 5px;
+}
+
 
 @keyframes pipe-animation {
     from{

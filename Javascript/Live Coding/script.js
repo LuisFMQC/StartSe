@@ -2,13 +2,28 @@
     'use strict';
     const mario = dom.querySelector('.super-mario');
     const pipe = dom.querySelector('.pipe-game');
+    const temaSound = dom.querySelector('#tema');
+    const jumpSound = dom.querySelector('#jump');
+    const gameoverSound = dom.querySelector('#gameover-sound');
+    const gameoverImg = dom.querySelector('#gameover-image');
+    const restart = dom.querySelector('.restart');
 
+    function autoPlay(){
+        temaSound.play();
+    }
+
+    function restartGame(){
+        dom.location.reload(true);
+    }
+    
     const jump = () => {
         mario.classList.add('jump-mario');
 
         setTimeout(() => {
             mario.classList.remove('jump-mario');
         }, 500);
+
+        jumpSound.play();
     }
 
     const loopgame = setInterval (() => {
@@ -26,9 +41,17 @@
             mario.style.width = '75px';
             mario.style.marginLeft ='45px';
 
+            jumpSound.src = ''
+            temaSound.pause();  
+            gameoverSound.play();
+            gameoverImg.parentNode.removeAttribute('hidden', 'hidden');
+            
+        
             clearInterval(loopgame)
         }
     }, 10);
 
-    document.addEventListener('keydown', jump);
+    autoPlay();
+    dom.addEventListener('keydown', jump);
+    restart.addEventListener('click', restartGame);
 })(document);

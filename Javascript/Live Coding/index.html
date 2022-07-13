@@ -12,7 +12,22 @@
         <img src="./images/clouds-gamer.png" class="cloud-game">
         <img src="./images/pipe-game.png" class="pipe-game">
         <img src="./images/super-mario.gif" class="super-mario">
+        <div class="gameover" hidden>
+            <img src="./images/gameover.png" id="gameover-image">
+            <div class="buttons">
+            <p class="restart"><span class="seta">↺</span><span>Tentar novamente!</span></p>
+            </div>
+        </div>   
+        <audio id="tema" loop preload="auto">
+            <source src="./Sounds/tema.wav" type="audio/wav">
+        </audio> 
+        <audio id="jump">
+            <source src="./Sounds/jump.wav" type="audio/wav">
+        </audio>
+        <audio id="gameover-sound">
+            <source src="./Sounds/lost_a_life.wav" type="audio/wav">
+        </audio>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
