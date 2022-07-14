@@ -7,15 +7,41 @@
     const gameoverSound = dom.querySelector('#gameover-sound');
     const gameoverImg = dom.querySelector('#gameover-image');
     const restart = dom.querySelector('.restart');
+    const music = dom.querySelector('#music');
+    const effects = dom.querySelector('#effects');
+
+    function muteEffects(){
+        if(effects.src === 'http://127.0.0.1:5500/StartSe/Javascript/Live%20Coding/images/alto-falante.png'){
+            effects.src = './images/alto-falante-mute.png';
+            jumpSound.muted = true;
+            gameoverSound.muted = true;
+        }
+        else {
+            effects.src = './images/alto-falante.png';
+            jumpSound.muted = false;
+            gameoverSound.muted = false;
+        } 
+    }
+
+    function muteMusic(){
+        if(music.src === 'http://127.0.0.1:5500/StartSe/Javascript/Live%20Coding/images/effect.png'){
+            music.src = './images/effect-mute.png';
+            temaSound.muted = true;
+        }
+        else {
+            music.src = './images/effect.png';
+            temaSound.muted = false;
+        }
+    }
 
     function autoPlay(){
         temaSound.play();
-    }
+    } 
 
     function restartGame(){
-        dom.location.reload(true);
+        dom.location.reload(false);
     }
-    
+
     const jump = () => {
         mario.classList.add('jump-mario');
 
@@ -54,4 +80,6 @@
     autoPlay();
     dom.addEventListener('keydown', jump);
     restart.addEventListener('click', restartGame);
+    effects.addEventListener('click', muteEffects);
+    music.addEventListener('click', muteMusic);
 })(document);

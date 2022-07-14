@@ -17,13 +17,12 @@
 }
 
 .gameover {
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     overflow: hidden;
     width: 40vw;
     height: auto;
-    margin: 20vh 30vw;
+    margin: 18vh 30vw;
   }
 
 .pipe-game {
@@ -72,10 +71,6 @@ p {
     font-family: Bangers;
 }
 
-/* p:hover {
-    transform: translateY(-2px);
-} */
-
 p:hover {
     cursor: pointer;
     transform: translateY(-2px)
@@ -83,6 +78,24 @@ p:hover {
 
 span {
     margin: 5px;
+}
+
+.sound-icons {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 1vh;
+    margin-left: 92%;
+    /* min-width: 50px; */
+    width: auto;
+/*     height: auto; */
+    left: 0;
+    top: 0;
+}
+
+.sound-icons img {
+    width: 30%;
 }
 
 

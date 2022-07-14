@@ -17,15 +17,19 @@
             <div class="buttons">
             <p class="restart"><span class="seta">↺</span><span>Tentar novamente!</span></p>
             </div>
+        </div>
+        <div class="sound-icons">
+            <img src="./images/effect.png" id="music">
+            <img src="./images/alto-falante.png" id="effects">
         </div>   
-        <audio id="tema" loop preload="auto">
+        <audio id="tema" loop preload="true">
             <source src="./Sounds/tema.wav" type="audio/wav">
         </audio> 
         <audio id="jump">
-            <source src="./Sounds/jump.wav" type="audio/wav">
+            <source src="./Sounds/jump.wav" type="audio/wav" class="jump">
         </audio>
         <audio id="gameover-sound">
-            <source src="./Sounds/lost_a_life.wav" type="audio/wav">
+            <source src="./Sounds/lost_a_life.wav" type="audio/wav" class="tema">
         </audio>
     </div>
     <script src="script.js"></script>
