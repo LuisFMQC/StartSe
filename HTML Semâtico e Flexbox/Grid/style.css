@@ -1,0 +1,50 @@
+body , p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: dimgray;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "header header" "section sidebar" "footer footer";
+    border-collapse: collapse;
+}
+
+header {
+    grid-area: header;
+    background-color: dodgerblue;
+}
+
+section {
+    grid-area: section;
+    background-color: aquamarine;
+}
+
+sidebar {
+    grid-area: sidebar;
+    background-color: bisque;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.caixa1, .caixa2, .caixa3 {
+    width: 25%;
+    background-color: lightpink;
+}
+
+.caixa2 {
+    width: 50%;
+    margin: 0 2px;
+}
