@@ -22,5 +22,6 @@ class Produto{
 }
 
 const prod = new Produto('Meu Produto', 10, 3, 2, 20);
-prod.volumeProduto();
-console.log(prod.parcelaValor(4));
+
+console.log(prod.volumeProduto());
+console.log(prod.parcelaValor(2));
