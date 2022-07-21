@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(10, 10, 77);
+    color: white;
+    font: 11pt Tahoma;
+}
+
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+table th {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+td {
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(105, 105, 103);
+}

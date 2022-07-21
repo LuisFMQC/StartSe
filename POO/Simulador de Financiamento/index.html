@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Simulador de financiamento</title>
+</head>
+<body>
+    <h2>Simulador de Financiamento com Sistema de Amortização Constante (SAC)</h2>
+    <Div> 
+        <label for="textoValor">Valor do bem a ser financiado:</label>
+        <input type="text" id="textoValor" placeholder="Valor a ser financiado">
+    <div>
+        <label for="textoEntrada">Valor da entrada:</label>
+        <input type="text" id="textoEntrada" placeholder="Valor da entrada">
+    </div>
+    <div>
+        <label for="textoTaxaJuros">Taxa de juros (%):</label>
+        <input type="text" id="textoTaxaJuros" placeholder="Taxa de juros (%)">
+    </div>
+    <div>
+        <label for="textoPrazo">Prazo do financiamento (em meses):</label>
+        <input type="text" id="textoPrazo" placeholder="Prazo em meses">
+    </div>
+    <div>
+        <button id="botaoCalcular">Calcular</button>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Com carência?</label>
+        <select id="listaSuspensa" hidden>
+            <option value="2">2 meses</option>
+            <option value="3">3 meses</option>
+            <option value="4">4 meses</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Parcela</th>
+                <th>Valor da Parcela</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Saldo</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela"></tbody>
+    </table>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
