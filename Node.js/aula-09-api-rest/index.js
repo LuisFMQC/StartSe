@@ -3,7 +3,7 @@ import { StatusCodes } from "http-status-codes";
 
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 let users = [
     { id: 1, name: 'Luis Fernando', age: 28 },
     { id: 2, name: 'André Stein', age: 28}
