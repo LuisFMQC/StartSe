@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
-})
+});
 
 app.get('/', (request, response) => {
     return response.send('<h1>Trabalhando com servidor express.</h1>');
@@ -29,7 +29,7 @@ app.get('/users/:userId', (req, res) => {
         return (user.id === Number(userId));
     })
     return res.send(user);
-})
+});
 
 app.post('/users', (req, res) => {
     const newUser = req.body;
@@ -37,7 +37,7 @@ app.post('/users', (req, res) => {
     users.push(newUser);
 
     return res.status(StatusCodes.CREATED).send(newUser);
-})
+});
 
 app.put('/users/:userId', (req, res) => {
     const userId = req.params.userId;
@@ -48,9 +48,9 @@ app.put('/users/:userId', (req, res) => {
             return updatedUser;
         }
         return user;
-    })
+    });
     return response.send(updatedUser);
-})
+});
 
 app.delete('/users/:userId', (req, res) => {
     const userId = req.params.userId;
