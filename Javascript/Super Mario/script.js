@@ -25,7 +25,7 @@
     }
 
     function muteMusic(){
-        if(music.src === 'http://127.0.0.1:5500/StartSe/Javascript/Super%20Mario/images/effect.png'){
+        if(music.src === `${url}/images/effect.png`){
             music.src = './images/effect-mute.png';
             temaSound.muted = true;
         }
