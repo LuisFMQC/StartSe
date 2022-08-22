@@ -9,9 +9,10 @@
     const restart = dom.querySelector('.restart');
     const music = dom.querySelector('#music');
     const effects = dom.querySelector('#effects');
+    const url = window.location.href.toString().replace('/index.html', '');
 
     function muteEffects(){
-        if(effects.src === 'http://127.0.0.1:5500/StartSe/Javascript/Live%20Coding/images/alto-falante.png'){
+        if(effects.src === `${url}/images/alto-falante.png`){
             effects.src = './images/alto-falante-mute.png';
             jumpSound.muted = true;
             gameoverSound.muted = true;
@@ -24,7 +25,7 @@
     }
 
     function muteMusic(){
-        if(music.src === 'http://127.0.0.1:5500/StartSe/Javascript/Live%20Coding/images/effect.png'){
+        if(music.src === 'http://127.0.0.1:5500/StartSe/Javascript/Super%20Mario/images/effect.png'){
             music.src = './images/effect-mute.png';
             temaSound.muted = true;
         }
